@@ -91,16 +91,15 @@ The React application will be available at:
 
 `http://localhost:3000`
 
-## Admin Access
+## ## Admin Access
 
-The Laravel admin login page is available at:
+The Laravel admin panel is available at:
 
 `http://127.0.0.1:8000/admin/login`
 
-The database seeder creates a sample local administrator account:
+A sample administrator account is created locally by the database seeder.
 
-- **Email:** `admin@test.com`
-- **Password:** `admin123`
+For security reasons, login credentials are not included in this documentation.
 
 **Important:** Change the default password before using the application outside local development.
 
