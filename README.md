@@ -1,34 +1,118 @@
-# WinaFakhar
+# WinaFakhar – Pottery E-commerce Platform
 
-The project uses React for the interface and Laravel for the API and database.
+WinaFakhar is a full-stack pottery e-commerce application that allows users to explore pottery products, manage their shopping cart, place orders, and reserve pottery workshops.
 
-## Start locally
+The project uses **React.js** for the frontend and **Laravel** for the backend API, database management, and administration pages.
 
-1. Start MySQL and create the database configured in `backend/.env` (`pottery_db` by default).
-2. In a terminal:
+## Technologies Used
 
-   ```powershell
-   cd backend
-   php artisan migrate --force
-   php artisan db:seed --force
-   php artisan serve
-   ```
+- **Frontend:** React.js, JavaScript, CSS
+- **Backend:** PHP, Laravel
+- **Database:** MySQL
+- **Architecture:** REST API
 
-3. In another terminal:
+## Main Features
 
-   ```powershell
-   cd frontend
-   npm start
-   ```
+- Browse and explore pottery products.
+- View product details and categories.
+- Add products to the shopping cart.
+- Register and log in.
+- Place orders.
+- Reserve pottery workshops.
+- Send contact messages.
+- Admin dashboard for product management.
+- Manage registrations, orders, workshop reservations, and contact messages.
 
-4. Open `http://localhost:3000` for the React storefront. Laravel serves the API at `http://127.0.0.1:8000/api`.
-5. Open `http://127.0.0.1:8000/admin/login` for the Laravel admin pages.
+## Project Structure
 
-The seed creates sample products and a local admin account:
+```text
+WinaFakhar/
+├── backend/       # Laravel application and API
+├── frontend/      # React application
+├── README.md
+└── .gitignore
+```
 
-- Email: `admin@test.com`
-- Password: `admin123`
+## Installation and Setup
 
-Change the seeded password before using the project outside local development.
+### 1. Clone the repository
 
-The admin login and product management pages are rendered by Laravel Blade. Products, registrations, orders, workshop reservations, and contact messages are handled by Laravel. The React storefront keeps the cart in the browser until checkout; Laravel calculates the order total from product prices stored in the database. Card payment is currently recorded as a selected method; no payment provider is connected.
+```bash
+git clone https://github.com/WIA-AFQ/Pottery-Project.git
+cd Pottery-Project
+```
+
+### 2. Backend Setup
+
+Open a terminal:
+
+```bash
+cd backend
+composer install
+```
+
+Create your environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate the application key:
+
+```bash
+php artisan key:generate
+```
+
+Configure your MySQL database in `backend/.env`. The default database name is `pottery_db`.
+
+Create the database in MySQL, then run:
+
+```bash
+php artisan migrate
+php artisan db:seed
+php artisan serve
+```
+
+The Laravel backend will be available at:
+
+`http://127.0.0.1:8000`
+
+### 3. Frontend Setup
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+The React application will be available at:
+
+`http://localhost:3000`
+
+## Admin Access
+
+The Laravel admin login page is available at:
+
+`http://127.0.0.1:8000/admin/login`
+
+The database seeder creates a sample local administrator account:
+
+- **Email:** `admin@test.com`
+- **Password:** `admin123`
+
+**Important:** Change the default password before using the application outside local development.
+
+## Important Notes
+
+- The admin login and product management pages are built with Laravel Blade.
+- Products, user registrations, orders, workshop reservations, and contact messages are handled by Laravel.
+- The React storefront keeps the shopping cart in the browser until checkout.
+- Laravel calculates order totals using product prices stored in the database.
+- Card payment is currently recorded as a selected payment method. No external payment provider is integrated yet.
+
+## Author
+
+**Wiam Bouazizi**
+
