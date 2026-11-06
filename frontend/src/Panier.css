@@ -1,0 +1,266 @@
+/* PAGE */
+.panier-page{
+    background:#f5f5f5;
+    min-height:100vh;
+    padding:40px;
+}
+
+/* LAYOUT */
+.panier-container{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+/* LEFT */
+.panier-left{
+    flex:2;
+}
+
+.panier-left h2{
+    margin-bottom:20px;
+}
+
+.cart-card{
+    background:white;
+    display:flex;
+    gap:20px;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.cart-card img{
+    width:120px;
+    height:140px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.cart-info{
+    flex:1;
+}
+
+.cart-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.cart-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:15px;
+}
+
+/* DELETE */
+.delete-btn{
+    border:none;
+    background:none;
+    font-size:20px;
+    cursor:pointer;
+    color:#caa19c;
+}
+
+/* RIGHT SUMMARY */
+.summary-box{
+    width:350px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    position:sticky;
+    top:20px;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+    font-size:18px;
+}
+
+.checkout-btn{
+    width:100%;
+    background:#8c8a67;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* EMPTY */
+.empty-cart{
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* SELECT QTY */
+.qty-select{
+    padding:6px 12px;
+    border:1px solid #ddd;
+    border-radius:20px;
+    background:white;
+    font-size:14px;
+    cursor:pointer;
+}
+
+/* OVERLAY */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.payment-box{
+    width:500px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    position:relative;
+}
+
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    border:none;
+    background:none;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.payment-box form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.payment-box input,
+.payment-box textarea,
+.payment-box select{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.payment-box textarea{
+    height:100px;
+    resize:none;
+}
+
+.payment-box button[type="submit"]{
+    background:#8c8a67;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* NAVBAR */
+.navbar{
+    height:80px;
+    background:#f8f1eb;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:relative;
+    z-index:3000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu-btn{
+    border:none;
+    background:none;
+    font-size:32px;
+    color:#8B5E3C;
+    cursor:pointer;
+    position:relative;
+    z-index:4000;
+}
+
+.logo-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo-small{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#444;
+}
+
+.logo{
+    font-family:'Great Vibes', cursive;
+    font-size:50px;
+    color:#000;
+}
+
+/* CONTAINER */
+.container{
+    display:flex;
+    position:relative;
+    z-index:1;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:230px;
+    min-height:100vh;
+    background:white;
+    box-shadow:2px 0 10px rgba(0,0,0,.1);
+    transition:all .4s ease;
+    overflow:hidden;
+    position:relative;
+    z-index:1000;
+}
+
+.sidebar.closed{
+    width:0;
+    min-width:0;
+    overflow:hidden;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:20px;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:5px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    background:#f1f1f1;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    padding:30px;
+}

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.atelier-page{
+    min-height:100vh;
+    display:flex;
+    background:#f7f3ee;
+}
+
+/* IMAGE */
+
+.atelier-left{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.image-slider{
+    width:100%;
+    max-width:650px;
+    height:750px;
+    border-radius:25px;
+    background-size:cover;
+    background-position:center;
+    transition:all 1s ease;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+
+.atelier-right{
+    flex:1;
+    padding:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.small-title{
+    display:block;
+    color:#a67c52;
+    letter-spacing:8px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.main-title{
+    font-family:'Great Vibes', cursive;
+    font-size:120px;
+    font-weight:400;
+    color:#111;
+    line-height:1;
+}
+
+.welcome-title{
+    margin-top:15px;
+    color:#8B5E3C;
+    font-size:32px;
+    font-weight:500;
+}
+
+.welcome-title::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:3px;
+    background:#8B5E3C;
+    margin-top:12px;
+}
+
+.description{
+    margin-top:35px;
+    line-height:2;
+    color:#555;
+    font-size:18px;
+    max-width:650px;
+}
+
+.atelier-info{
+    margin-top:30px;
+}
+
+.atelier-info p{
+    margin-bottom:15px;
+    font-size:18px;
+    color:#444;
+}
+
+.atelier-info strong{
+    color:#8B5E3C;
+}
+
+/* BUTTON */
+
+.join-btn{
+    margin-top:35px;
+    width:260px;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#95902a;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.join-btn:hover{
+   background:#8c8a67;
+    transform:translateY(-3px);
+}
+
+/* FORM */
+
+.reservation-form{
+    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    width:450px;
+}
+
+.reservation-form h3{
+    color:#8B5E3C;
+    margin-bottom:20px;
+}
+
+.reservation-form input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.submit-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#8B5E3C;
+    color:white;
+    cursor:pointer;
+}
+
+.submit-btn:hover{
+    background:#8c8a67;
+}
+/* NAVBAR */
+
+.navbar{
+    height:80px;
+    background:#f8f1eb;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu-btn{
+    border:none;
+    background:none;
+    font-size:32px;
+    color:#8B5E3C;
+    cursor:pointer;
+}
+
+.logo-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo-small{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#444;
+}
+
+.logo{
+    font-family:'Great Vibes', cursive;
+    font-size:50px;
+    color:#000;
+    font-weight:normal;
+    line-height:1;
+}
+
+.search-bar input{
+    width:350px;
+    padding:12px;
+    border-radius:25px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+.login{
+    padding:10px 15px;
+    border:1px solid #8B5E3C;
+    background:white;
+    border-radius:20px;
+    cursor:pointer;
+    color:#8B5E3C;
+}
+
+.register{
+    padding:10px 15px;
+    border:none;
+    background:#8B5E3C;
+    color:white;
+    border-radius:20px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:230px;
+    min-height:100vh;
+    background:white;
+    box-shadow:2px 0 10px rgba(0,0,0,.1);
+    transition:all .4s ease;
+    overflow:hidden;
+}
+
+.sidebar.closed{
+    width:0;
+    min-width:0;
+    overflow:hidden;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:20px;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:5px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    background:#f1f1f1;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+    transition:all .4s ease;
+}
+.atelier-page{
+    display:flex;
+    min-height:100vh;
+    gap:30px;
+}
+
+.atelier-left{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.image-slider{
+    width:90%;
+    height:500px;
+    border-radius:20px;
+    background-size:cover;
+    background-position:center;
+    transition:0.5s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.atelier-right{
+    flex:1;
+    padding:20px;
+}
+
+.title-section{
+    margin-bottom:20px;
+}
+
+.small-title{
+    letter-spacing:3px;
+    font-size:12px;
+    color:#8B5E3C;
+}
+
+.main-title{
+    font-size:45px;
+    font-family:'Great Vibes', cursive;
+    margin:5px 0;
+}
+
+.welcome-title{
+    font-size:28px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.description{
+    line-height:1.6;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.atelier-info p{
+    margin:8px 0;
+    font-size:18px;
+}
+
+.join-btn{
+    margin-top:20px;
+    padding:12px 20px;
+    background:#8c8a67;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.reservation-form{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.reservation-form input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.submit-btn{
+    padding:10px;
+     background:#8c8a67;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+/* LEFT SIDE */
+
+.atelier-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider {
+  width: 100%;
+  max-width: 550px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slideEffect 4s ease-in-out infinite;
+}
+
+@keyframes slideEffect {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) scale(0.95);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-100px) scale(0.95);
+  }
+}
