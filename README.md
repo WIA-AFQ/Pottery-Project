@@ -54,7 +54,7 @@ composer install
 Create your environment file:
 
 ```bash
-cp .env.example .env
+Copy-Item .env.example .env
 ```
 
 Generate the application key:
@@ -91,7 +91,7 @@ The React application will be available at:
 
 `http://localhost:3000`
 
-## ## Admin Access
+##  Admin Access
 
 The Laravel admin panel is available at:
 
@@ -102,9 +102,24 @@ A sample administrator account is created locally by the database seeder.
 For security reasons, login credentials are not included in this documentation.
 
 **Important:** Change the default password before using the application outside local development.
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/accueilpoterie.png)
+### Products
+![Products](screenshots/produitspoterie.png)
+### Ateliers
+![atelierspoterie](screenshots/atelierspoterie.png)
+### Cadeaux
+![cadeauxpoterie](screenshots/cadeauxpoterie.png)
+### Panier
+![panierpoterie](screenshots/panierpoterie.png)
+### AdminProduits 
+![adminproduits](screenshots/adminproduits.png)
+### Login
+![login](screenshots/loginadminm.png)
 
 ## Important Notes
-
 - The admin login and product management pages are built with Laravel Blade.
 - Products, user registrations, orders, workshop reservations, and contact messages are handled by Laravel.
 - The React storefront keeps the shopping cart in the browser until checkout.
